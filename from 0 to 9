@@ -1,0 +1,221 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+//zadacha0
+//int main()
+//{
+//    int n;
+//
+//    cout << "Enter a number: ";
+//    cin >> n;
+//
+//    int factorial = 1; 
+//
+//    for (int i = 1; i <= n; i++) {
+//        factorial *= i;
+//    }
+//    cout << "Factorial of " << n << " is " << factorial;
+//}
+
+
+//zadacha1
+//ai = i^2 + 3i за въведено i.
+//int main() {
+//	int n;
+//
+//	cout << "Enter n: ";
+//	cin >> n;
+//
+//	for (int i = 1; i <= n; i++) {
+//		cout << "a" << i << " = " << i * i + 3 * i << endl;
+//	}
+//}
+
+
+//zadacha2
+//int main() {
+//    int n, inputNumber, biggestNumber;
+//
+//    cout << "Enter n: ";
+//    cin >> n; //3
+//
+//    cin >> inputNumber; 
+//
+//    biggestNumber = inputNumber; 
+//
+//    for (int index = 1; index < n  ; index++) {
+//        cin >> inputNumber; 
+//
+//        if ((biggestNumber >= 0 && inputNumber < 0) ||
+//            (biggestNumber < 0 && inputNumber > biggestNumber && inputNumber < 0)) {
+//            biggestNumber = inputNumber;
+//        }
+//    }
+//
+//    cout << biggestNumber;
+//
+//}
+
+//zadacha3
+
+//int main() {
+//
+//	int n;
+//	int firstNumber = 0;
+//	int secondNumber = 1; 
+//	int nextNumber = 0; 
+//
+//	cout << "Enter a number: ";
+//	cin >> n;
+//
+//	cout << "Fibonacci sequence is: " << firstNumber << ", " << secondNumber << ", ";
+//
+//	for (int i = 2; i < n ; i++) {
+//		 
+//		nextNumber = firstNumber + secondNumber;
+//		firstNumber = secondNumber;
+//		secondNumber = nextNumber; 
+//		
+//
+//		cout << nextNumber << ", ";
+//	}
+//	
+//}
+
+//zadacha4
+//От клавиатурата се въвеждат произволен брой числа. Намерете сбора на всички числа до въвеждането на 0.
+
+//int main() {
+//	int number; 
+//	cout << "Enter n: " << endl;
+//	 
+//
+//	int sum = 0;
+//
+//	do {
+//		cin >> number; 
+//		sum = sum + number; 
+//
+//	} while (number > 0);
+//
+//	cout << "The sum is: " << sum << endl;
+// }
+
+//zadacha5 
+//От клавиатурата се въвежда естествено число. Намерете сбора на цифрите му.
+
+//int main() {
+//
+//	int number;
+//
+//	cout << "Enter number: ";
+//	cin >> number; 
+//
+//	int sum = 0; 
+//
+//	do {
+//		sum = sum + number % 10;
+//		number = number / 10;
+//	} while (number > 0);
+//
+//	cout << "Sum of digits is: " << sum; 
+//	}
+
+//zadacha6
+//Напишете програма, която, по дадено число а и степенен показател n, намира а нa n-та степен
+//int main() {
+//	int number; 
+//	cout << "Enter a number: ";
+//	cin >> number; 
+//
+//	int n;
+//	cout << "Enter exponent: ";
+//	cin >> n; 
+//
+//	int result;
+//	result = number; 
+//
+//	if (n == 0) {
+//		result = 1;
+//	}
+//	if (n == 1) {
+//		result = number;
+//	}
+//	else {
+//		for (int i = 1; i < n; i++) {
+//
+//			result *= number;
+//
+//
+//		}
+//		cout << result;
+//	}
+//
+//}
+
+//zadacha7
+//По дадено естествено число определете дали то е просто.
+
+//int main() {
+//	int number;
+//	cout << "Enter a number: ";
+//	cin >> number;
+//
+//
+//	if (number == 0 || number == 1) {
+//		cout <<  "NO";
+//	}
+//	else if (number == 2) {
+//		cout << "NO";
+//	}
+//	else {
+//		for (int i = 2; i <= number / 2; i++) {
+//
+//			if (number % i == 0) {
+//				cout << "NO"; break;
+//			}
+//			else {
+//				cout << "YES"; break; 
+//			}
+//		}
+//	}
+//}
+
+//zadacha8
+//Изкарайте всички главни букви от английската азбука, които са съгласни.
+
+//int main() {
+//	for (int index = 65; index <= 90; index++) {
+//		if (index != 65 && index != 69 && index != 73 && index != 79 && index != 85 && index!= 89) {
+//			cout << char(index) << endl;
+//		}
+//	}
+//}
+
+//zadacha9
+//По дадено число N изкарайте на екрана квадрат от 
+// N x N символи, където по главния диагонал стоят нули, над него +, а под него -.
+// 
+//int main() {
+//	int number; 
+//
+//	cout << "Enter a number: ";
+//	cin >> number; //3 
+//
+//	for (int iRoll = 0; iRoll < number; iRoll++) {
+//		for (int iColumn = 0; iColumn < number; iColumn++) {
+//			if (iRoll == iColumn) {
+//				cout << "0" ;
+//			}
+//			else if (iRoll > iColumn) {
+//				cout << "-" ;
+//			}
+//			else if (iRoll < iColumn) {
+//				cout << "+" ; 
+//			}
+//		}
+//		cout << endl; 
+//	}
+//
+//}
